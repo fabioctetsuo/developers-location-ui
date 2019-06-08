@@ -16,7 +16,7 @@ const SideBar = ({ users, removeUser }) => (
             <img src={user.avatar} alt="teste" />
             <div className="user-info">
               <h2>{user.name}</h2>
-              <h3>{user.login}</h3>
+              <h3>@{user.login}</h3>
             </div>
             <button type="button" onClick={() => removeUser(user.id)}>
               <i className="fa fa-fw fa-times-circle remove" />

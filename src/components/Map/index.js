@@ -6,6 +6,7 @@ import PropTypes from 'prop-types';
 import { ActionCreators as ModalActions } from '../../store/ducks/modal';
 
 import 'mapbox-gl/dist/mapbox-gl.css';
+import './styles.css';
 
 class Map extends Component {
   static propTypes = {
@@ -78,6 +79,7 @@ class Map extends Component {
                   width: 48,
                   height: 48,
                 }}
+                className="avatar-map-photo"
                 alt={user.name}
                 src={user.avatar}
               />
